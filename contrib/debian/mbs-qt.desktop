@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Mobistake 
+Comment=Mobistake P2P Cryptocurrency
+Comment[fr]=Mobistake, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Mobistake, eşten eşe kriptografik sanal para birimi
+Exec=mbs-qt %u
+Terminal=false
+Type=Application
+Icon=mbs128
+MimeType=x-scheme-handler/mbs;
+Categories=Office;Finance;
+StartupWMClass=mbs-qt

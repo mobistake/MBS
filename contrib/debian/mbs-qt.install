@@ -1,0 +1,6 @@
+usr/local/bin/mbs-qt usr/bin
+share/pixmaps/mbs32.xpm usr/share/pixmaps
+share/pixmaps/mbs16.xpm usr/share/pixmaps
+share/pixmaps/mbs128.png usr/share/pixmaps
+debian/mbs-qt.desktop usr/share/applications
+debian/mbs-qt.protocol usr/share/kde4/services/
