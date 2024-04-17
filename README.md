@@ -13,5 +13,5 @@
 
 - Website: https://mobistake.app
 - Explorer: https://explorer.mobistake.app
-- Discord: https://discord.gg/8J8a2WZy
+- Discord: https://discord.gg/FFcuUHR4uj
 - Twitter: https://twitter.com/Mobistake
