@@ -3373,6 +3373,11 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 mapRejectedBlocks.insert(std::make_pair(block.GetHash(), GetTime()));
                 return state.DoS(0, false, REJECT_INVALID, "bad-cb-payee", false, "Couldn't find masternode/budget payment");
             }
+
+            if (!IsDeveloperPaymentValid(block, nHeight)) {
+                mapRejectedBlocks.insert(std::make_pair(block.GetHash(), GetTime()));
+                return state.DoS(0, false, REJECT_INVALID, "bad-cb-payee", false, "Couldn't find developer payment");
+            }
         } else {
             LogPrintf("%s: Masternode/Budget payment checks skipped on sync\n", __func__);
         }
@@ -5051,12 +5056,6 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
         nServices = ServiceFlags(nServiceInt);
         if (!pfrom->fInbound) {
             connman.SetServices(pfrom->addr, nServices);
-        }
-        if (nSendVersion < MIN_PEER_PROTO_VERSION) {
-            // disconnect from peers older than this proto version
-            LogPrint(BCLog::NET, "peer=%d using obsolete version %i; disconnecting\n", pfrom->GetId(), nVersion);
-            pfrom->fDisconnect = true;
-            return false;
         }
 
         if (pfrom->nServicesExpected & ~nServices) {

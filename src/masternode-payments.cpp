@@ -579,6 +579,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew, int n
 
     std::string strPayeesPossible = "";
     CAmount requiredMasternodePayment = CMasternode::GetMasternodePayment(nBlockHeight);
+    CAmount requiredDeveloperPayment = CMasternode::GetDevPayment(nBlockHeight);
 
     for (CMasternodePayee& payee : vecPayments) {
         bool found = false;
@@ -786,4 +787,32 @@ std::string CMasternodePayments::ToString() const
     info << "Votes: " << (int)mapMasternodePayeeVotes.size() << ", Blocks: " << (int)mapMasternodeBlocks.size();
 
     return info.str();
+}
+
+bool IsDeveloperPaymentValid(const CBlock& block, int nBlockHeight)
+{
+
+    if (!masternodeSync.IsSynced()) { //there is no budget data to use to check anything -- find the longest chain
+        LogPrint(BCLog::MASTERNODE, "Client not synced, skipping block developer payment checks\n");
+        return true;
+    }
+
+    const bool isPoSActive = Params().GetConsensus().NetworkUpgradeActive(nBlockHeight, Consensus::UPGRADE_POS);
+    const CTransaction& txNew = (isPoSActive ? block.vtx[1] : block.vtx[0]);
+
+    // check if developer fee amount is valid
+    CTxDestination dev_destination = DecodeDestination(Params().GetConsensus().devAddress);
+    CScript devScript = GetScriptForDestination(dev_destination);
+    CAmount nDevReward = CMasternode::GetDevPayment(nBlockHeight);
+    for (CTxOut out : txNew.vout) {
+        if (devScript == out.scriptPubKey) {
+            if (out.nValue != nDevReward) {
+                if (sporkManager.IsSporkActive(SPORK_20_DEVELOPER_PAYMENT_ENFORCEMENT)) {
+                    LogPrintf("%s : Developer payment value (%s) different from required value (%s).\n", __func__, FormatMoney(out.nValue).c_str(), FormatMoney(nDevReward).c_str());
+                    return false;
+                }
+            }
+        }
+    }
+    return true;
 }
