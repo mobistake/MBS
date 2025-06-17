@@ -26,7 +26,7 @@ Drag Mobistake-Qt to your applications folder, and then run Mobistake-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Mobistake Wiki](https://github.com/mbs)
+* See the documentation at the [Mobistake Wiki](https://github.com/mobistake)
 for help and more information.
 * Join our Discord server [Discord Server](https://discord.gg/uTar2Sd)
 
@@ -48,7 +48,7 @@ The Mobistake repo's [root README](/README.md) contains relevant information on 
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://github.com/mbs)
+- [Source Code Documentation (External Link)](https://github.com/mobistake)
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)

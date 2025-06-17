@@ -2273,11 +2273,8 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 *[cssClass="coin-icon-piv"] {
   qproperty-icon: url("://ic-coin-piv") off, url("://ic-coin-piv") on;
   qproperty-iconSize: 24px 24px;
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: transparent;
   border: 2px solid #004677;
-  border-radius: 12px;
 }
 
 /*HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
@@ -2287,6 +2284,12 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 *[cssClass="container-dialog"] {
   background-color: #ffffff;
   border-radius: 2px;
+  border: 1px solid #eeeeee;
+}
+
+[cssClass="text-title-dialog"] {
+  color: #eeeeee;
+  font-size: 22px;
 }
 
 *[cssClass="text-title2-dialog"] {
@@ -2475,11 +2478,6 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 *[cssClass="ic-arrow"] {
   qproperty-icon: url("://ic-arrow-right") off, url("://ic-arrow-right") on;
-  qproperty-iconSize: 24px 24px;
-}
-
-QPushButton[cssClass="ic-arrow"]:checked {
-  qproperty-icon: url("://ic-arrow-drop-down") off, url("://ic-arrow-drop-down") on;
   qproperty-iconSize: 24px 24px;
 }
 

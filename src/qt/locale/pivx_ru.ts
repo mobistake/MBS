@@ -746,8 +746,8 @@ for staking</source>
         <translation>Сортировать по</translation>
     </message>
     <message>
-        <source>Amount of MBS and zMBS staked.</source>
-        <translation>Сумма добытых MBS и zMBS</translation>
+        <source>Amount of MBS staked.</source>
+        <translation>Сумма добытых MBS </translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1620,36 +1620,8 @@ NODES</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MBS units to zMBS</source>
-        <translation>Невозможно автоматически отчеканить единицы MBS для zMBS</translation>
-    </message>
-    <message>
-        <source>Enable zMBS Automint</source>
-        <translation>Невозможно авточеканка  zMBS</translation>
-    </message>
-    <message>
-        <source>Enable automatic zMBS minting from specific addresses</source>
-        <translation>Включить автоматическое чеканку zMBS с определенных адресов</translation>
-    </message>
-    <message>
         <source>Enable Automint Addresses</source>
         <translation>Включить адреса с автоматической чеканкой</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming MBS which get automatically converted to zMBS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих MBS, которые автоматически конвертируются в zMBS благодаря Zerocoin протоколу (min: 10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zMBS</source>
-        <translation>Процент  авточеканненых zMBS</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough MBS for this denomination is available</source>
-        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно MBS для этой номинации.</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zMBS Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zMBS</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2409,10 +2381,6 @@ Address: %4
     <message>
         <source>Custom Backup Path:</source>
         <translation>Пользовательский путь резервного копирования:</translation>
-    </message>
-    <message>
-        <source>Custom zMBS Backup Path:</source>
-        <translation>Пользовательский путь резервного копирования zMBS:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3526,13 +3494,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            MBS is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  MBS incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zMBS) and Zerocoin staking.
+                           privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            MBS utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of MBS to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regularly.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3540,8 +3507,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
 MBS - это форма цифровых онлайн-денег, использующая технологию блокчейн,
 которая может быть легко переведена по всему миру, мгновенно и с практически
 нулевой комиссией. MBS включает в себя лидирующую на рынке защиту и
-«конфиденциальность», а также является первой PoS криптовалютой (Proof of Stake),
-в которой реализована система стекинга ZeroCoin (zMBS) и Zerocoin.
+«конфиденциальность».
 &lt;/p&gt;&lt;p align="justify"&gt;
 MBS использует консенсус PoS (Proof of Stake), позволяя всем владельцам MBS участвовать в заработке вознаграждений
 при этом обеспечивая безопасность сети с помощью кошельков с полными узлами, а также позволяет
@@ -3607,7 +3573,7 @@ MBS использует консенсус PoS (Proof of Stake), позволя
         <source>What is a Masternode Controller?</source>
         <translation>Что такое контроллер Мастерноды?
 
- </translation>
+ </translation>
     </message>
     <message>
         <source>
@@ -3619,8 +3585,6 @@ MBS использует консенсус PoS (Proof of Stake), позволя
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -4564,7 +4528,7 @@ Are you sure?
         <translation>Стекинг активен</translation>
     </message>
     <message>
-        <source>Staking not active</source>
+        <source>Staking inactive</source>
         <translation>Стекинг не активен</translation>
     </message>
     <message>
@@ -5013,24 +4977,26 @@ Select fewer inputs with coin control.</source>
         <translation>Выбрать язык</translation>
     </message>
     <message>
-        <source>Mobistake Beyond</source>
-        <translation>Mobistake Beyond</translation>
+        <source>Welcome to
+Mobistake Wallet</source>
+        <translation>Добро пожаловать
+в основной кошелек Mobistake</translation>
     </message>
     <message>
-        <source>Mobistake beyond forum is the first cryptocurrency forum with its own blockchain based on PoS.</source>
-        <translation>Mobistake beyond forum is the first cryptocurrency forum with its own blockchain based on PoS.</translation>
+        <source>MBS is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>MBS - самая инновационная в мире технология на основе блокчейна Proof of Stake. Разработана командой опытных разработчиков и криптографов.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Share your opinion, solve your doubts and contribute adding new content while receiving passive income from our Masternodes and Staking.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Share your opinion, solve your doubts and contribute adding new content while receiving passive income from our Masternodes and Staking.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - MBS believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как говорится в нашем манифесте: конфиденциальность является не подлежащим обсуждению основным правом человека; это дает пользователям свободу делиться своими данными в любое время и с кем угодно, ведь MBS верит в собственный суверенитет.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Masternodes are part of the infrastructure that sustains Mobistake coin. They verify new blocks and perform special roles in governing the blockchain.</source>
-        <translation>Masternodes are part of the infrastructure that sustains Mobistake coin. They verify new blocks and perform special roles in governing the blockchain.</translation>
+        <source>The masternode network is MBS's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Сеть мастернод - это сеть второго уровня MBS поверх блокчейна, которая позволяет нашему ДАО обеспечивать децентрализованное управление и казначейство.</translation>
     </message>
     <message>
-        <source>Be inspired by community</source>
-        <translation>Be inspired by community</translation>
+        <source>How MBS respects your privacy?</source>
+        <translation>Как MBS уважает вашу конфиденциальность?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5068,10 +5034,6 @@ Select fewer inputs with coin control.</source>
         <translation>Не удается получить блокировку в каталоге данных %s. Mobistake, вероятно, уже запущен.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Изменить автоматическое окончательное поведение бюджета. mode = auto: Голосовать за точный окончательный бюджет, соответствующий моему сгенерированному бюджету. (строка, по умолчанию: авто)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Непрерывные транзакции с ограничениями по скорости до &lt;n&gt;* 1000 байт в минуту (по умолчанию: %u)</translation>
     </message>
@@ -5082,10 +5044,6 @@ Select fewer inputs with coin control.</source>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Удалите все транзакции кошелька и восстановите только те части блок-цепи через -rescan при запуске</translation>
-    </message>
-    <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Удалите все траты и монетки zerocoin, которые были записаны в базу данных blockchain, и переиндексируйте их (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -5380,10 +5338,6 @@ Select fewer inputs with coin control.</source>
         <translation>Ошибка чтения из базы данных, завершение работы.</translation>
     </message>
     <message>
-        <source>Error writing zerocoinDB to disk</source>
-        <translation>Ошибка записи zerocoinDB на диск</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
@@ -5484,14 +5438,6 @@ Select fewer inputs with coin control.</source>
         <translation>Перерасчет предложения MBS...</translation>
     </message>
     <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Реиндексирующая база данных нулевого цикла ...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Повторный обмен зерокоинта не удался</translation>
-    </message>
-    <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Выбранная стоимость монет меньше цели платежа</translation>
     </message>
@@ -5500,12 +5446,8 @@ Select fewer inputs with coin control.</source>
         <translation>Это предварительная версия сборки - используйте на свой страх и риск - не используйте для ставок или коммерческих приложений!</translation>
     </message>
     <message>
-        <source>Disable all MBS specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции MBS (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Включить SwiftX, показать подтверждения для заблокированных транзакций (bool, default: %s)</translation>
+        <source>Disable all MBS specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции MBS (Masternodes) (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5580,14 +5522,6 @@ Select fewer inputs with coin control.</source>
         <translation>Не удалось разобрать публичные расходы</translation>
     </message>
     <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Не удалось выбрать зерокоин</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Не удалось вытереть zerocoinDB</translation>
-    </message>
-    <message>
         <source>Failed to write coin serial number into wallet</source>
         <translation>Не удалось записать серийный номер монеты в кошелек</translation>
     </message>
@@ -5622,10 +5556,6 @@ Select fewer inputs with coin control.</source>
     <message>
         <source>Loading block index...</source>
         <translation>Загружается индекс блока ...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Загрузка кэша бюджета ...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -6030,10 +5960,6 @@ Select fewer inputs with coin control.</source>
         <translation>Синхронизация завершена</translation>
     </message>
     <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Синхронизация бюджетов ...</translation>
-    </message>
-    <message>
         <source>Synchronizing masternode winners...</source>
         <translation>Синхронизация мастернод победителей ...</translation>
     </message>
@@ -6044,10 +5970,6 @@ Select fewer inputs with coin control.</source>
     <message>
         <source>Synchronizing sporks...</source>
         <translation>Синхронизация спорков ...</translation>
-    </message>
-    <message>
-        <source>Syncing zMBS wallet...</source>
-        <translation>Синхронизация zMBS кошелька ...</translation>
     </message>
     <message>
         <source>The threshold value cannot be less than %s</source>
@@ -6166,10 +6088,6 @@ Select fewer inputs with coin control.</source>
         <translation>Имя пользователя для соединений JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zMBS</source>
-        <translation>Значение ниже наименьшего доступного номинала (= 1) zMBS</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Проверка блоков ...</translation>
     </message>
@@ -6210,10 +6128,6 @@ Select fewer inputs with coin control.</source>
         <translation>Предупреждение. Неподдерживаемый аргумент -debugnet игнорируется, используйте -debug = net.</translation>
     </message>
     <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>У вас недостаточно Zerocoins в вашем кошельке</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Вам нужно перестроить базу данных с помощью -reindex для изменения -txindex</translation>
     </message>
@@ -6224,14 +6138,6 @@ Select fewer inputs with coin control.</source>
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>Опции уведомления ZeroMQ:</translation>
-    </message>
-    <message>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation>Чеканка zerocoin доступна только на regtest</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Варианты Zerocoin:</translation>
     </message>
     <message>
         <source>on startup</source>

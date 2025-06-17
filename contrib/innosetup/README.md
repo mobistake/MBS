@@ -35,22 +35,22 @@ Create a project folder with the following elements
 * Open the Inno Setup Compiler
 * Create a new project using the `wizard`
 * Fill in the following data:
-    * Application Name: `Sapphire Core`
-    * Application Version: `1.2.0.0`
-    * Application Publisher: `2020 Sapphire Core Developers`
-    * Application Website: `https://sappcoin.com/`
+    * Application Name: `Mobistake Core`
+    * Application Version: `2.0.0.0`
+    * Application Publisher: `2024 Mobistake Core Developers`
+    * Application Website: `https://mobistake.app/`
 * Setup the destination folder:
     * Program Files Folder
-    * Folder name: `Sapphire`
+    * Folder name: `Mobistake`
 * Add application files:
-    * Select the file `sap-pt.exe` as main executable from the `package` folder
+    * Select the file `mbs-qt.exe` as main executable from the `package` folder
     * Add the folder package in the other application files
 * Add all application shortcuts
 * Install mode: `Administrative` and add the possibility to choose at startup
 * Select the setup languages
 * Compiler settings
     * Select the output folder previous created
-    * Edit the output base filename to: `sap-1.1.0-win64-setup.exe`
+    * Edit the output base filename to: `mbs-2.0.0-win64-setup.exe`
     * Add the icon file for the application setup
 * Save the resulting `Inno Setup` project file (*.iss file)
 

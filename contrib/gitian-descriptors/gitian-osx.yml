@@ -29,7 +29,7 @@ packages:
 - "python3-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/mobistake/Mobistake.git"
+- "url": "https://github.com/mobistake/MBS.git"
   "dir": "pivx"
 files:
 - "MacOSX10.11.sdk.tar.gz"

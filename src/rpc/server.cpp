@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
-// Copyright (c) 2021 The DECENOMY Core Developers
+// Copyright (c) 2021-2022 The DECENOMY Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -266,11 +266,11 @@ UniValue stop(const JSONRPCRequest& jsonRequest)
     if (jsonRequest.fHelp || jsonRequest.params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop MBS server.");
+            "\nStop Mobistake server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "MBS server stopping";
+    return "Mobistake server stopping";
 }
 
 
@@ -298,11 +298,10 @@ static const CRPCCommand vRPCCommands[] =
         {"network", "setban", &setban, true },
         {"network", "listbanned", &listbanned, true },
         {"network", "clearbanned", &clearbanned, true },
+        {"network", "checkconnection", &checkconnection, true },
 
         /* Block chain and UTXO */
-        {"blockchain", "findserial", &findserial, true },
         {"blockchain", "getblockindexstats", &getblockindexstats, true },
-        {"blockchain", "getserials", &getserials, true },
         {"blockchain", "getblockchaininfo", &getblockchaininfo, true },
         {"blockchain", "getbestblockhash", &getbestblockhash, true },
         {"blockchain", "getblockcount", &getblockcount, true },
@@ -319,6 +318,8 @@ static const CRPCCommand vRPCCommands[] =
         {"blockchain", "invalidateblock", &invalidateblock, true },
         {"blockchain", "reconsiderblock", &reconsiderblock, true },
         {"blockchain", "verifychain", &verifychain, true },
+        {"blockchain", "getburnaddresses", &getburnaddresses, true },
+        {"blockchain", "rewindblockindex", &rewindblockindex, true },
 
         /* Mining */
         {"mining", "getblocktemplate", &getblocktemplate, true },
@@ -368,25 +369,17 @@ static const CRPCCommand vRPCCommands[] =
         {"mbs", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
         {"mbs", "masternodecurrent", &masternodecurrent, true },
         {"mbs", "startmasternode", &startmasternode, true },
+        {"mbs", "reloadmasternodeconfig", &reloadmasternodeconfig, true },
         {"mbs", "createmasternodekey", &createmasternodekey, true },
         {"mbs", "getmasternodeoutputs", &getmasternodeoutputs, true },
         {"mbs", "listmasternodeconf", &listmasternodeconf, true },
+        {"mbs", "getactivemasternodecount", &getactivemasternodecount, true },
         {"mbs", "getmasternodestatus", &getmasternodestatus, true },
         {"mbs", "getmasternodewinners", &getmasternodewinners, true },
         {"mbs", "getmasternodescores", &getmasternodescores, true },
-        {"mbs", "preparebudget", &preparebudget, true },
-        {"mbs", "submitbudget", &submitbudget, true },
-        {"mbs", "mnbudgetvote", &mnbudgetvote, true },
-        {"mbs", "getbudgetvotes", &getbudgetvotes, true },
-        {"mbs", "getnextsuperblock", &getnextsuperblock, true },
-        {"mbs", "getbudgetprojection", &getbudgetprojection, true },
-        {"mbs", "getbudgetinfo", &getbudgetinfo, true },
-        {"mbs", "mnbudgetrawvote", &mnbudgetrawvote, true },
-        {"mbs", "mnfinalbudget", &mnfinalbudget, true },
-        {"mbs", "checkbudgets", &checkbudgets, true },
         {"mbs", "mnsync", &mnsync, true },
         {"mbs", "spork", &spork, true },
-        {"mbs", "getcollateral", &getcollateral, true},
+        {"mbs", "mnping", &mnping, true },
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -395,27 +388,6 @@ static const CRPCCommand vRPCCommands[] =
         {"wallet", "getaddressinfo", &getaddressinfo, true },
         {"wallet", "getstakingstatus", &getstakingstatus, false },
         {"wallet", "multisend", &multisend, false },
-        {"zerocoin", "createrawzerocoinspend", &createrawzerocoinspend, false },
-        {"zerocoin", "getzerocoinbalance", &getzerocoinbalance, false },
-        {"zerocoin", "listmintedzerocoins", &listmintedzerocoins, false },
-        {"zerocoin", "listspentzerocoins", &listspentzerocoins, false },
-        {"zerocoin", "listzerocoinamounts", &listzerocoinamounts, false },
-        {"zerocoin", "mintzerocoin", &mintzerocoin, false },
-        {"zerocoin", "spendzerocoin", &spendzerocoin, false },
-        {"zerocoin", "spendrawzerocoin", &spendrawzerocoin, true },
-        {"zerocoin", "spendzerocoinmints", &spendzerocoinmints, false },
-        {"zerocoin", "resetmintzerocoin", &resetmintzerocoin, false },
-        {"zerocoin", "resetspentzerocoin", &resetspentzerocoin, false },
-        {"zerocoin", "getarchivedzerocoin", &getarchivedzerocoin, false },
-        {"zerocoin", "importzerocoins", &importzerocoins, false },
-        {"zerocoin", "exportzerocoins", &exportzerocoins, false },
-        {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false },
-        {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false },
-        {"zerocoin", "getzpivseed", &getzpivseed, false },
-        {"zerocoin", "setzpivseed", &setzpivseed, false },
-        {"zerocoin", "generatemintlist", &generatemintlist, false },
-        {"zerocoin", "searchdzpiv", &searchdzpiv, false },
-        {"zerocoin", "dzpivstate", &dzpivstate, false },
 
 #endif // ENABLE_WALLET
 };
@@ -569,6 +541,12 @@ std::string JSONRPCExecBatch(const UniValue& vReq)
 
 UniValue CRPCTable::execute(const JSONRPCRequest &request) const
 {
+    // Return immediately if in warmup
+    std::string strWarmupStatus;
+    if (RPCIsInWarmup(&strWarmupStatus)) {
+        throw JSONRPCError(RPC_IN_WARMUP, "RPC in warm-up: " + strWarmupStatus);
+    }
+
     // Find method
     const CRPCCommand* pcmd = tableRPC[request.strMethod];
     if (!pcmd)
@@ -606,7 +584,7 @@ std::string HelpExampleRpc(std::string methodname, std::string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:4856/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:11428/\n";
 }
 
 void RPCSetTimerInterfaceIfUnset(RPCTimerInterface *iface)

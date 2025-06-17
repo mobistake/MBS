@@ -8,7 +8,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/mobistake/Mobistake-detached-sigs.git"
+- "url": "https://github.com/mobistake/MBS-detached-sigs.git"
   "dir": "signature"
 files:
 - "pivx-osx-unsigned.tar.gz"

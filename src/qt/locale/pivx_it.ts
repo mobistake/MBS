@@ -747,8 +747,8 @@ per lo staking</translation>
         <translation>Filtra per</translation>
     </message>
     <message>
-        <source>Amount of MBS and zMBS staked.</source>
-        <translation>Quantità di MBS e zMBS dallo stake.</translation>
+        <source>Amount of MBS staked.</source>
+        <translation>Quantità di MBS in staking.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1626,36 +1626,8 @@ NODE</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MBS units to zMBS</source>
-        <translation>Attiva la forgiatura automatica di unità MBS in zMBS</translation>
-    </message>
-    <message>
-        <source>Enable zMBS Automint</source>
-        <translation>Attiva forgiatura automatica zMBS</translation>
-    </message>
-    <message>
-        <source>Enable automatic zMBS minting from specific addresses</source>
-        <translation>Attiva la forgiatura automatica di zMBS da indirizzi specifici</translation>
-    </message>
-    <message>
         <source>Enable Automint Addresses</source>
         <translation>Abilita indirizzi forgiatura automatica</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming MBS which get automatically converted to zMBS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di MBS in entrata che viene automaticamente convertita in zMBS attraverso il protocollo Zerocoin (min: 10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zMBS</source>
-        <translation>Percentuale di zMBS Percentuale di zMBS da forgiare automaticamente</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough MBS for this denomination is available</source>
-        <translation>Attendere la conversione automatica in Zerocoin fino a quando non saranno disponibili abbastanza MBS per questa denominazione</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zMBS Denomination</source>
-        <translation>Denominazione preferita forgiatura automatica zMBS</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2415,10 +2387,6 @@ Indirizzo: %4
     <message>
         <source>Custom Backup Path:</source>
         <translation>Percorso di backup personalizzato:</translation>
-    </message>
-    <message>
-        <source>Custom zMBS Backup Path:</source>
-        <translation>Percorso di backup zMBS personalizzato:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3532,22 +3500,19 @@ Si è verificato un errore nel tentativo di salvare l'elenco degli indirizzi in 
                            MBS is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  MBS incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zMBS) and Zerocoin staking.
+                           privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            MBS utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of MBS to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regularly.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 MBS è una forma di denaro online digitale che utilizza la tecnologia blockchain
 che può essere facilmente trasferito a livello globale, istantaneamente e con quasi
-zero costi. MBS incorpora le tecniche di sicurezza e privacy più avanzate del mercato
-ed è anche la prima criptovaluta PoS (Proof of Stake)
-ad implementare lo staking di ZeroCoin (zMBS) e Zerocoin.
+zero costi. MBS incorpora le tecniche di sicurezza e privacy.
 &lt;/p&gt;&lt;p align="justify"&gt;
 MBS utilizza un algoritmo del sistema di consenso Proof of Stake (PoS),
 consentendo a tutti i proprietari di MBS di partecipare alle ricompense dei blocchi
@@ -3650,8 +3615,6 @@ per vedere e spendere i saldi sulla rete.
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3691,8 +3654,6 @@ regolarmente. Questi servizi includono:
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;Una governance decentrata (votazione della proposta)&lt;/li&gt;
-                           &lt;li&gt;Un sistema di bilancio decentralizzato (Tesoreria)&lt;/li&gt;
                            &lt;li&gt;Convalida delle transazioni all'interno di ciascun blocco&lt;/li&gt;
                            &lt;li&gt;Funziona come un nodo completo aggiuntivo nella rete&lt;/li&gt;
                            &lt;/ul&gt;
@@ -4613,7 +4574,7 @@ Sei sicuro?
         <translation>Stacking attivo</translation>
     </message>
     <message>
-        <source>Staking not active</source>
+        <source>Staking inactive</source>
         <translation>Stacking non attivo</translation>
     </message>
     <message>
@@ -5063,24 +5024,26 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Seleziona la tua lingua</translation>
     </message>
     <message>
-        <source>Mobistake Beyond</source>
-        <translation>Mobistake Beyond</translation>
+        <source>Welcome to
+Mobistake Wallet</source>
+        <translation>Benvenuto in
+Portafoglio Mobistake.</translation>
     </message>
     <message>
-        <source>Mobistake beyond forum is the first cryptocurrency forum with its own blockchain based on PoS.</source>
-        <translation>Mobistake beyond forum is the first cryptocurrency forum with its own blockchain based on PoS.</translation>
+        <source>MBS is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>MBS è la tecnologia basata su blockchain Proof of Stake più innovativa al mondo. Sviluppato da un team di sviluppatori e crittografi di grande esperienza.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Share your opinion, solve your doubts and contribute adding new content while receiving passive income from our Masternodes and Staking.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Share your opinion, solve your doubts and contribute adding new content while receiving passive income from our Masternodes and Staking.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - MBS believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Come dice il nostro manifesto: la privacy è un diritto umano di base non negoziabile; garantisce agli utenti la libertà di condividere i propri dati quando e con chi vuole - MBS crede nell'auto sovranità.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Masternodes are part of the infrastructure that sustains Mobistake coin. They verify new blocks and perform special roles in governing the blockchain.</source>
-        <translation>Masternodes are part of the infrastructure that sustains Mobistake coin. They verify new blocks and perform special roles in governing the blockchain.</translation>
+        <source>The masternode network is MBS's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>La rete masternode è la rete di secondo livello di MBS sopra alla blockchain che consente al nostro DAO di fornire governance decentralizzata e tesoreria.</translation>
     </message>
     <message>
-        <source>Be inspired by community</source>
-        <translation>Be inspired by community</translation>
+        <source>How MBS respects your privacy?</source>
+        <translation>In che modo MBS rispetta la tua privacy?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5118,10 +5081,6 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Impossibile allocare la directory di dati %s. Probabilmente Mobistake è già in esecuzione.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Modifica il comportamento di votazione automatica del budget finalizzato. mode=auto: vota solo per la corrispondenza esatta del budget finalizzato al mio budget generato. (stringa, impostazione predefinita: auto)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Limita continuamente le transazioni gratuite a &lt;n&gt;* 1000 byte al minuto (impostazione predefinita: %u)</translation>
     </message>
@@ -5132,10 +5091,6 @@ Selezionare meno ingressi con controllo coin.</translation>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Elimina tutte le transazioni del portafoglio e recupera solo quelle parti della blockchain tramite -rescan all'avvio</translation>
-    </message>
-    <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Elimina tutte le spese e forgiature zerocoin che sono state registrate nella blockchain e le reindicizza (0-1, impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -5430,10 +5385,6 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Errore durante la lettura dal database, arresto.</translation>
     </message>
     <message>
-        <source>Error writing zerocoinDB to disk</source>
-        <translation>Errore durante la scrittura di zerocoinDB sul disco</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
@@ -5534,14 +5485,6 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Ricalcolo della supply MBS...</translation>
     </message>
     <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Reindicizzazione del database zerocoin...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Errore nella reindicizzazione del database zerocoin</translation>
-    </message>
-    <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Il valore delle coin selezionate è inferiore all'obiettivo di pagamento</translation>
     </message>
@@ -5550,12 +5493,8 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Questa è una build di test pre-release - utilizzare a proprio rischio - non utilizzare per staking o applicazioni commerciali!</translation>
     </message>
     <message>
-        <source>Disable all MBS specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disabilita tutte le funzionalità specifiche di MBS (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Abilita SwiftX, mostra le conferme per le transazioni bloccate (valore bool, predefinito: %s)</translation>
+        <source>Disable all MBS specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>Disabilita tutte le funzionalità specifiche di MBS (Masternodes) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5630,14 +5569,6 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Analisi della spesa pubblica non riuscita</translation>
     </message>
     <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Impossibile selezionare uno zerocoin</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Impossibile cancellare zerocoinDB</translation>
-    </message>
-    <message>
         <source>Failed to write coin serial number into wallet</source>
         <translation>Impossibile scrivere il numero seriale della coin nel portafoglio</translation>
     </message>
@@ -5672,10 +5603,6 @@ Selezionare meno ingressi con controllo coin.</translation>
     <message>
         <source>Loading block index...</source>
         <translation>Caricamento indice dei blocchi...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Caricamento cache budget...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -6084,10 +6011,6 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Sincronizzazione finita</translation>
     </message>
     <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Sincronizzazione budgets...</translation>
-    </message>
-    <message>
         <source>Synchronizing masternode winners...</source>
         <translation>Sincronizzazione dei Masternode vincitori...</translation>
     </message>
@@ -6098,10 +6021,6 @@ Selezionare meno ingressi con controllo coin.</translation>
     <message>
         <source>Synchronizing sporks...</source>
         <translation>Sincronizzazione sporks...</translation>
-    </message>
-    <message>
-        <source>Syncing zMBS wallet...</source>
-        <translation>Sincronizzazione del portafoglio zMBS...</translation>
     </message>
     <message>
         <source>The threshold value cannot be less than %s</source>
@@ -6220,10 +6139,6 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Nome utente per connessioni JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zMBS</source>
-        <translation>Il valore è inferiore alla denominazione più piccola disponibile (=1) di zMBS</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Verifica dei blocchi...</translation>
     </message>
@@ -6264,10 +6179,6 @@ Selezionare meno ingressi con controllo coin.</translation>
         <translation>Avvertenza: argomento non supportato -debugnet ignorato, utilizzare -debug=net.</translation>
     </message>
     <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Non hai abbastanza Zerocoin nel tuo portafoglio</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>È necessario ricostruire il database utilizzando -reindex per modificare -txindex</translation>
     </message>
@@ -6278,14 +6189,6 @@ Selezionare meno ingressi con controllo coin.</translation>
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>Opzioni di notifica ZeroMQ:</translation>
-    </message>
-    <message>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation>Coniatura di Zerocoin disponibile solo su regtest</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Opzioni Zerocoin:</translation>
     </message>
     <message>
         <source>on startup</source>

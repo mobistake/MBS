@@ -747,8 +747,8 @@ voor bewijs van Inzet</translation>
         <translation>Filter volgens</translation>
     </message>
     <message>
-        <source>Amount of MBS and zMBS staked.</source>
-        <translation>Hoeveelheid aan gestaked MBS en zMBS.</translation>
+        <source>Amount of MBS staked.</source>
+        <translation>Hoeveelheid aan gestaked MBS.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1613,7 +1613,7 @@ NODES</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting MBS.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van MBS.</translation>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van MBS.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1626,36 +1626,8 @@ NODES</translation>
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MBS units to zMBS</source>
-        <translation>Schakel automatisch slaan van MBS-eenheden in op zMBS</translation>
-    </message>
-    <message>
-        <source>Enable zMBS Automint</source>
-        <translation>Schakel zMBS Automint in</translation>
-    </message>
-    <message>
-        <source>Enable automatic zMBS minting from specific addresses</source>
-        <translation>Automatische zMBS munting inschakelen vanuit specifiek adres</translation>
-    </message>
-    <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen Inschakelen</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming MBS which get automatically converted to zMBS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende MBS die automatisch wordt omgezet naar zMBS via Zerocoin Protocol (min: 10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zMBS</source>
-        <translation>Percentage autominted zMBS</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough MBS for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg MBS voor deze denominatie beschikbaar is</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zMBS Denomination</source>
-        <translation>Gewenste Automint zMBS denominatie</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2415,10 +2387,6 @@ Adres: %4
     <message>
         <source>Custom Backup Path:</source>
         <translation>Aangepast back-up pad:</translation>
-    </message>
-    <message>
-        <source>Custom zMBS Backup Path:</source>
-        <translation>Aangepast zMBS back-up pad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3532,13 +3500,12 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            MBS is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  MBS incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zMBS) and Zerocoin staking.
+                           privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            MBS utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of MBS to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regularly.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3546,8 +3513,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            MBS is een vorm van digitaal online geld dat gebruik maakt van blockchain technologie.
                            die gemakkelijk wereldwijd kan worden overgebracht, onmiddellijk en met bijna
                            geen kosten.  MBS omvat marktleidende beveiliging &amp;
-                           privacy en is ook de eerste PoS (Proof of Stake) Cryptovaluta
-                           om ZeroCoin (zMBS) en Zerocoin staking te implementeren.
+                           privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            MBS gebruikt een Proof of Stake (PoS) consensussysteemalgoritme,
                            waardoor alle eigenaren van MBS kunnen deelnemen aan het verdienen van blokbeloningen
@@ -3650,8 +3616,6 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3691,8 +3655,6 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;Een gedecentralizeerd bestuur (Stemming Voorstel)&lt;/li&gt;
-                           &lt;li&gt;Een gedecentralizeerd budgeteringssysteem (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validatie van transacties binnen elk blok&lt;/li&gt;
                            &lt;li&gt;Fungeert als een extra volledige node in het netwerk&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3969,7 +3931,7 @@ Weet u het zeker?
     </message>
     <message>
         <source>Enter label to be saved with this address</source>
-        <translation>Voer een label in dat bij het adres opgeslagen moet worden </translation>
+        <translation>Voer een label in dat bij het adres opgeslagen moet worden </translation>
     </message>
     <message>
         <source>Percentage</source>
@@ -4613,7 +4575,7 @@ Weet je zeker dat?
         <translation>Staking actief</translation>
     </message>
     <message>
-        <source>Staking not active</source>
+        <source>Staking inactive</source>
         <translation>Staking niet actief</translation>
     </message>
     <message>
@@ -5063,24 +5025,26 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Selecteer uw taal</translation>
     </message>
     <message>
-        <source>Mobistake Beyond</source>
-        <translation>Mobistake Beyond</translation>
+        <source>Welcome to
+Mobistake Wallet</source>
+        <translation>Welkom bij
+Mobistake Portemonnee</translation>
     </message>
     <message>
-        <source>Mobistake beyond forum is the first cryptocurrency forum with its own blockchain based on PoS.</source>
-        <translation>Mobistake beyond forum is the first cryptocurrency forum with its own blockchain based on PoS.</translation>
+        <source>MBS is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>MBS is 's werelds meest innovatieve Proof of Stake blockchain gebaseerde technologie. Ontwikkeld door een team van zeer ervaren ontwikkelaars en cryptografen.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Share your opinion, solve your doubts and contribute adding new content while receiving passive income from our Masternodes and Staking.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Share your opinion, solve your doubts and contribute adding new content while receiving passive income from our Masternodes and Staking.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - MBS believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoals ons manifest zegt: Privacy is een niet-onderhandelbaar fundamenteel mensenrecht; het geeft gebruikers de vrijheid om hun gegevens te delen wanneer en met wie ze maar willen - MBS gelooft in soevereiniteit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Masternodes are part of the infrastructure that sustains Mobistake coin. They verify new blocks and perform special roles in governing the blockchain.</source>
-        <translation>Masternodes are part of the infrastructure that sustains Mobistake coin. They verify new blocks and perform special roles in governing the blockchain.</translation>
+        <source>The masternode network is MBS's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Het masternode netwerk is MBS's tweedelaagse netwerk bovenop de blockchain die onze DAO in staat stelt om gedecentraliseerd bestuur, treasury te leveren</translation>
     </message>
     <message>
-        <source>Be inspired by community</source>
-        <translation>Be inspired by community</translation>
+        <source>How MBS respects your privacy?</source>
+        <translation>Hoe respecteert MBS uw privacy?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5118,10 +5082,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Kan geen vergrendeling op data directory %s verkrijgen. Mobistake loopt waarschijnlijk al.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Verander automatisch gefinaliseerd budget voting gedrag. modus=auto: Stem enkel voor exact gefinaliseerde budget overeenkomend met mijn gegenereerde budget. (tekenreeks, standaard: auto)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Doorlopend rate-limit gratis transacties naar&lt;n&gt;*1000 bytes per minuut (default:%u)</translation>
     </message>
@@ -5132,10 +5092,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Verwijder alle portemonnee transacties en herstel alleen die delen van de blockchain via -rescan bij opstarten</translation>
-    </message>
-    <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Verwijder alle bestede Zerocoin en mints die zijn geregistreerd in de blockchain database en her-indexeer ze (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -5430,10 +5386,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Error tijdens het lezen van de database, aan het afsluiten.</translation>
     </message>
     <message>
-        <source>Error writing zerocoinDB to disk</source>
-        <translation>Fout bij het schrijven van zerocoinDB naar schijf</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -5534,14 +5486,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Hercalculatie van MBS aanbod...</translation>
     </message>
     <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Her-indexeren Zerocoin database...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Her-indexeren Zerocoin database mislukt</translation>
-    </message>
-    <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Geselecteerde munt waarde is minder dan het betalingsdoel</translation>
     </message>
@@ -5550,12 +5494,8 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Dit is een pre-release test build - gebruik op eigen risico - niet gebruiken voor staking of handel applicaties!</translation>
     </message>
     <message>
-        <source>Disable all MBS specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke MBS functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Schakel SwiftX in, toon bevestigingen voor vergrendelde transacties (bool, standaard: %s)</translation>
+        <source>Disable all MBS specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke MBS functionaliteit uit (Masternodes) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5630,14 +5570,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Parsen van publieke uitgaven mislukt</translation>
     </message>
     <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Het is niet gelukt om een zerocoin te selecteren</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Mislukt om zerocoinDB te legen.</translation>
-    </message>
-    <message>
         <source>Failed to write coin serial number into wallet</source>
         <translation>Het serienummer van het muntstuk kan niet in de portemonnee worden geschreven</translation>
     </message>
@@ -5672,10 +5604,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
     <message>
         <source>Loading block index...</source>
         <translation>Blockindex laden...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Budget cache laden...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -6084,10 +6012,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Synchronisatie voltooid</translation>
     </message>
     <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Budgeten synchroniseren...</translation>
-    </message>
-    <message>
         <source>Synchronizing masternode winners...</source>
         <translation>Synchroniseren masternode winnaars...</translation>
     </message>
@@ -6098,10 +6022,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
     <message>
         <source>Synchronizing sporks...</source>
         <translation>Synchroniseren sporks...</translation>
-    </message>
-    <message>
-        <source>Syncing zMBS wallet...</source>
-        <translation>Synchroniseren zMBS portemonnee...</translation>
     </message>
     <message>
         <source>The threshold value cannot be less than %s</source>
@@ -6220,10 +6140,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zMBS</source>
-        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zMBS</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Blokken verifiëren...</translation>
     </message>
@@ -6264,10 +6180,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
         <translation>Waarschuwing: Niet ondersteunde argument -debugnet genegeerd, gebruik -debug=net.</translation>
     </message>
     <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Je hebt niet genoeg Zerocoins in je portemonnee</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Je moet de database herbouwen met -reindex om -txindex te wijzigen</translation>
     </message>
@@ -6278,14 +6190,6 @@ Selecteer minder invoeren met muntcontrole.</translation>
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>ZeroMQ notificatie opties:</translation>
-    </message>
-    <message>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation>Zerocoin munting alleen beschikbaar via regtest</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Zerocoin opties:</translation>
     </message>
     <message>
         <source>on startup</source>

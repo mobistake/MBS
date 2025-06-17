@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Mobistake"
-#define MyAppPublisher "2022 Mobistake developers"
+#define MyAppPublisher "2025 Mobistake developers"
 #define MyAppURL "https://mobistake.app/"
 #define MyAppExeName "mbs-qt.exe"
-//#define MyAppExtraData "https://explorer.decenomy.net/bootstraps/MBS/bootstrap.zip"
+//#define MyAppExtraData "https://downloads.masternodes.biz/snapshots/mbs.zip"
 #define MyAppVersion GetVersionNumbersString(".\package\" + MyAppExeName)
 
 #include ReadReg(HKLM, 'Software\WOW6432Node\Mitrich Software\Inno Download Plugin', 'InstallDir') + '\idp.iss'

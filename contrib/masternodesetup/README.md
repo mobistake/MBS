@@ -1,11 +1,11 @@
-![Example-Logo](https://sappcoin.com/wp-content/uploads/2021/05/Mobistake-logo-transparent.png)
+![Example-Logo](https://explorer.mobistake.app/img/logo.png)
 
 # Mobistake Masternode Setup Guide
 ***
 ## Required
 1) **MBS collateral value at current block** ([consult the collateral table](../../README.md#rewards-breakdown))
 2) **Local Wallet https://github.com/mobistake/MBS/releases/latest**
-3) **VPS with UBUNTU 20.04** (it is possible to work on other versions but it is not tested)
+3) **VPS with UBUNTU 22.04** (it is possible to work on other versions but it is not tested)
 4) **Putty https://www.putty.org/**
 5) **Text editor on your local pc to save data for copy/paste**
 ***
@@ -32,7 +32,7 @@ You will then receive your private key, save it in a txt to use it later.
 * Once logged in your vps, *copy/paste* each line one by one with *Enter*
 
 ```
-wget -q https://raw.githubusercontent.com/Mobistake/Mobistake/master/contrib/masternodesetup/masternodesetup.sh
+wget -q https://raw.githubusercontent.com/mobistake/MBS/master/contrib/masternodesetup/masternodesetup.sh
 ```
 
 ```
@@ -50,16 +50,14 @@ Remember to do `mbs-cli getblockcount` to check if VPS catching blocks till it s
 * Go to your wallet-qt and check peers list (tools - peers list) and select one ip from the list. With that ip do the follow command at VPS `mbs-cli addnode "ip" onetry`
 
       Example:
-		  mbs-cli addnode seed01.mobistake.app onetry
-		  mbs-cli addnode seed02.mobistake.app onetry
-		  mbs-cli addnode seed03.mobistake.app onetry
-		  mbs-cli addnode seed04.mobistake.app onetry
-		  mbs-cli addnode seed05.mobistake.app onetry
-		  mbs-cli addnode seed06.mobistake.app onetry
-		  mbs-cli addnode seed07.mobistake.app onetry
-		  mbs-cli addnode seed08.mobistake.app onetry
-		  mbs-cli addnode seed09.mobistake.app onetry
-		  mbs-cli addnode seed10.mobistake.app onetry
+		  mbs-cli addnode seed1.mobistake.app onetry
+		  mbs-cli addnode seed2.mobistake.app onetry
+		  mbs-cli addnode seed3.mobistake.app onetry
+		  mbs-cli addnode seed4.mobistake.app onetry
+		  mbs-cli addnode seed5.mobistake.app onetry
+		  mbs-cli addnode seed6.mobistake.app onetry
+		  mbs-cli addnode seed7.mobistake.app onetry
+		  mbs-cli addnode seed8.mobistake.app onetry
 
     
 * Check now if VPS already downloading blocks with the command `mbs-cli getblockcount`, and if yes give it time now to catch last block number 
