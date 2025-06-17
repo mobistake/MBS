@@ -103,6 +103,8 @@ struct Params {
     int64_t nTargetSpacing;
     int nTimeSlotLength;
 
+    // dev addresses
+    std::string devAddress;
     // burn addresses
     std::map<std::string, int> mBurnAddresses = {};
 
